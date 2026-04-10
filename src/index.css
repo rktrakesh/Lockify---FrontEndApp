@@ -117,6 +117,33 @@
     --sidebar-ring: oklch(0.556 0 0);
 }
 
+@theme inline {
+    /* Your existing font and sidebar variables... */
+    --font-heading: var(--font-sans);
+    --font-sans: 'Geist Variable', sans-serif;
+
+    /* ADD YOUR COLORS HERE */
+    --color-storm-dust-50: #f9fafa;
+    --color-storm-dust-100: #f4f5f5;
+    --color-storm-dust-200: #e5e6e5;
+    --color-storm-dust-300: #d3d4d3;
+    --color-storm-dust-400: #a1a5a3;
+    --color-storm-dust-500: #616563;
+    --color-storm-dust-600: #515453;
+    --color-storm-dust-700: #3e4240;
+    --color-storm-dust-800: #262726;
+    --color-storm-dust-900: #191a19;
+    --color-storm-dust-950: #0a0b0a;
+
+    /* Rest of your sidebar and chart variables... */
+    --color-sidebar-ring: var(--sidebar-ring);
+    /* ... keep everything else as is */
+}
+
+@theme {
+  --font-roboto: "Roboto", sans-serif;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
