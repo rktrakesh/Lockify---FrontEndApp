@@ -12,7 +12,7 @@ const UserHome = () => {
   const [loadingSecure, setLoadingSecure] = useState(false);
   const [currentUser, setCurrentUser] = useState<UserDto | null>(null);
 
-  const getUserData = async (email?: string | undefined) => {
+  const getUserData = async () => {
     try {
       setLoadingSecure(true);
       const response = await getCurrentUser(user?.email);
